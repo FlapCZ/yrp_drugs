@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>yrp_drugs</title>
+      <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+      <script src="ui.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   </head>
+   <body style="display: none;">
+         <div class="container">
+
+            <div class="craft" id="container" style="display: none;">
+               <div class="header">
+                  <h1>Craft drugs</h1>
+                  <button class="offnui">Close</button>
+               </div>
+               <div class="craft-container">
+                  <div class="weed">
+                     <h1>weed</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/2667/2667035.svg" height="70" width="70">
+                     <button class="SeeWeedCraft" id="button">See</button>
+                  </div>
+
+                  <div class="weed-info" id="DrugInfo" style="display: none;">
+                     <h1>weed</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/2667/2667035.svg" height="100" width="100">
+                     <button class="back2" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- enter the number of drugs you want to craft </p>
+                     <p>- crafting 1 weed takes 2s</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputWeed" min="0" max="5">
+                     <button class="CraftWeed" id="button">craft</button>
+                  </div>
+
+                  <div class="opium-info" id="DrugInfo" style="display: none;">
+                     <h1>opium</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/1544/1544943.svg" height="100" width="100">
+                     <button class="back2" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- enter the number of drugs you want to craft </p>
+                     <p>- crafting 1 opium takes 3s</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputOpium" min="0" max="5">
+                     <button class="CraftOpium" id="button">craft</button>
+                  </div>
+
+                  <div class="coke-info" id="DrugInfo" style="display: none;">
+                     <h1>coke</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/3217/3217555.svg" height="100" width="100">
+                     <button class="back2" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- enter the number of drugs you want to craft </p>
+                     <p>- crafting 1 coke takes 3s</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputCoke" min="0" max="5">
+                     <button class="CraftCoke" id="button">craft</button>
+                  </div>
+
+                  <div class="meth-info" id="DrugInfo" style="display: none;">
+                     <h1>meth</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/770/770989.svg" height="100" width="100">
+                     <button class="back2" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- enter the number of drugs you want to craft </p>
+                     <p>- crafting 1 meth takes 4s</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputMeth" min="0" max="5">
+                     <button class="CraftMeth" id="button">craft</button>
+                  </div>
+
+                  <div class="heroin-info" id="DrugInfo" style="display: none;">
+                     <h1>heroin</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/1685/1685846.svg" height="100" width="100">
+                     <button class="back2" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- enter the number of drugs you want to craft </p>
+                     <p>- crafting 1 heroin takes 4s</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputHeroin" min="0" max="5">
+                     <button class="CraftHeroin" id="button">craft</button>
+                  </div>
+
+                  <div class="mdma-info" id="DrugInfo" style="display: none;">
+                     <h1>mdma</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/770/770963.svg" height="100" width="100">
+                     <button class="back2" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- enter the number of drugs you want to craft </p>
+                     <p>- crafting 1 mdma takes 5s</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputMdma" min="0" max="5">
+                     <button class="CraftMdma" id="button">craft</button>
+                  </div>
+
+
+                  <div class="opium" style="display: none;">
+                     <h1>opium</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/1544/1544943.svg" height="70" width="70">
+                     <button class="SeeOpiumCraft" id="button">See</button>
+                  </div>
+
+                  <div class="coke" style="display: none;">
+                     <h1>coke</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/3217/3217555.svg" height="70" width="70">
+                     <button class="SeeCokeCraft" id="button">See</button>
+                  </div>
+
+                  <div class="meth" style="display: none;">
+                     <h1>meth</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/770/770989.svg" height="70" width="70">
+                     <button class="SeeMethCraft" id="button">See</button>
+                  </div>
+
+                  <div class="heroin" style="display: none;">
+                     <h1>heroin</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/1685/1685846.svg" height="70" width="70">
+                     <button class="SeeHeroinCraft" id="button">See</button>
+                  </div>
+
+                  <div class="mdma" style="display: none;">
+                     <h1>mdma</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/770/770963.svg" height="70" width="70">
+                     <button class="SeeMdmaCraft" id="button">See</button>
+                  </div>
+   
+               </div>
+            </div>
+
+            <div class="package" id="container" style="display: none;">
+               <div class="header">
+                  <h1>Package Drugs</h1>
+                  <button class="offnui">Close</button>
+               </div>
+               <div class="craft-container">
+                  <div class="weed">
+                     <h1>weed</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/2667/2667035.svg" height="70" width="70">
+                     <button class="SeeWeedPackage" id="button">See</button>
+                  </div>
+
+                  <div class="weed-pack" id="DrugInfo" style="display: none;">
+                     <h1>weed</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/2667/2667035.svg" height="100" width="100">
+                     <button class="back" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- packing 1 weed takes 3s </p>
+                     <p>- you need 5 weed to pack</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputPackageWeed" min="0" max="5">
+                     <button class="PackageWeed" id="button">Package</button>
+                  </div>
+
+                  <div class="opium-pack" id="DrugInfo" style="display: none;">
+                     <h1>Opium</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/1544/1544943.svg" height="100" width="100">
+                     <button class="back" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- packing 1 opium takes 3.5s</p>
+                     <p>- you need 5 opium to pack</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputPackageOpium" min="0" max="5">
+                     <button class="PackageOpium" id="button">Package</button>
+                  </div>
+
+                  <div class="coke-pack" id="DrugInfo" style="display: none;">
+                     <h1>Coke</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/3217/3217555.svg" height="100" width="100">
+                     <button class="back" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- packing 1 coke takes 4s</p>
+                     <p>- you need 5 coke to pack</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputPackageCoke" min="0" max="5">
+                     <button class="PackageCoke" id="button">Package</button>
+                  </div>
+
+                  <div class="meth-pack" id="DrugInfo" style="display: none;">
+                     <h1>Meth</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/770/770989.svg" height="100" width="100">
+                     <button class="back" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- packing 1 meth takes 3.5s</p>
+                     <p>- you need 5 meth to pack</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputPackageMeth" min="0" max="5">
+                     <button class="PackageMeth" id="button">Package</button>
+                  </div>
+
+                  <div class="heroin-pack" id="DrugInfo" style="display: none;">
+                     <h1>Heroin</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/1685/1685846.svg" height="100" width="100">
+                     <button class="back" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- packing 1 heroin takes 3.75s</p>
+                     <p>- you need 5 heroin to pack</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputPackageHeroin" min="0" max="5">
+                     <button class="PackageHeroin" id="button">Package</button>
+                  </div>
+
+                  <div class="mdma-pack" id="DrugInfo" style="display: none;">
+                     <h1>Mdma</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/770/770963.svg" height="100" width="100">
+                     <button class="back" id="back">Back</button>
+                     <p>- there must be at least 1 police officer on the server </p>
+                     <p>- packing 1 mdma takes 3.75s</p>
+                     <p>- you need 5 mdma to pack</p>
+                     <input placeholder="count" type="number" id="info-button" name="quantity" class="InputPackageMdma" min="0" max="5">
+                     <button class="PackageMdma" id="button">Package</button>
+                  </div>
+
+                  <div class="opium-package" style="display: none;">
+                     <h1>opium</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/1544/1544943.svg" height="70" width="70">
+                     <button class="SeeOpiumPackage" id="button">See</button>
+                  </div>
+
+                  <div class="coke-package" style="display: none;">
+                     <h1>coke</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/3217/3217555.svg" height="70" width="70">
+                     <button class="SeeCokePackage" id="button">See</button>
+                  </div>
+
+                  <div class="meth-package" style="display: none;">
+                     <h1>meth</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/770/770989.svg" height="70" width="70">
+                     <button class="SeeMethPackage" id="button">See</button>
+                  </div>
+
+                  <div class="heroin-package" style="display: none;">
+                     <h1>heroin</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/1685/1685846.svg" height="70" width="70">
+                     <button class="SeeHeroinPackage" id="button">See</button>
+                  </div>
+
+                  <div class="mdma-package" style="display: none;">
+                     <h1>mdma</h1>
+                     <img src="https://www.flaticon.com/svg/static/icons/svg/770/770963.svg" height="70" width="70">
+                     <button class="SeeMdmaPackage" id="button">See</button>
+                  </div>
+   
+               </div>
+            </div>
+            
+         </div>
+      <script src="js/index.js"></script>      
+      </div>
+   </body>
+   <script src="bootstrap.min.js"></script>                
+</html>
+

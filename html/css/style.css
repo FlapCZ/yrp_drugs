@@ -1,0 +1,1386 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+body {
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	background: rgb(0, 0, 0,.7);
+}
+
+
+.container {
+}
+
+.craft {
+}
+
+#container {
+	position: absolute;
+	height: 50em;
+	width: 60em;
+	transform: translate(+41%, +15%);
+	background: rgba(77, 77, 77, 0.863);
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	border-radius: 10px;
+	font-family: 'Caveat Brush', cursive;
+	border: 4px solid rgb(172, 168, 172);
+}
+
+#container:hover {
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.header {
+	position: relative;
+	top: -20px;
+	right: auto;
+	left: auto;
+	text-align: center;
+	background: rgba(77, 77, 77);
+	line-height: 100px;
+	border-radius: 25px;
+	font-family: 'Caveat Brush', cursive;
+	border: 4px solid rgb(172, 168, 172);
+}
+
+.header:hover {
+	border: 4px solid rgb(224, 135, 18); 
+}
+
+.offnui {
+	background: none;
+	border: 0;
+	box-sizing: border-box;
+	color: transparent;
+	cursor: pointer;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	left: 50%;
+	letter-spacing: 1.5px;
+	line-height: 90px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-transform: uppercase;
+	top: 50%;
+	transform: translate(350%, -50%);
+	transition: all 0.2s ease-in;
+	width: 100px;
+	text-align: center;
+	border-radius: 100%;
+}
+
+.offnui::before,
+.offnui::after {
+  background-color: white;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform-origin: center left;
+  transition: all 0.2s ease-in;
+  width: 141.4214px;
+  z-index: -1;
+}
+
+.offnui::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.offnui::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.offnui:hover {
+  color: rgb(224, 135, 18);
+}
+
+.offnui:hover::before,
+.offnui:hover::after {
+  height: 50px;
+  transform: rotate(0deg);
+}
+
+.header h1{
+	color: rgb(172, 168, 172);
+}
+
+.craft-container {
+}
+
+.craft-container h1 {
+	color: rgb(172, 168, 172);
+}
+
+#DrugInfo {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 38.5em;
+	width: 60em;
+	position: absolute;
+	left: 4.5%;
+
+	border-radius: 5%;
+	color: rgb(172, 168, 172);
+}
+#DrugInfo h1 {
+	font-size: 60px;
+}
+
+#DrugInfo p {
+	font-size: 20px;
+}
+
+#DrugInfo:hover {
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.weed {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	left: auto;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-radius: 5%;
+}
+
+.weed:hover {
+	background: rgba(224, 135, 18, .1);
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.weed img {
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 10px;
+}
+
+#back {
+	background: none;
+	border: 0;
+	box-sizing: border-box;
+	color: transparent;
+	cursor: pointer;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	left: 50%;
+	letter-spacing: 1.5px;
+	line-height: 90px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-transform: uppercase;
+	top: 10%;
+	transform: translate(350%, -50%);
+	transition: all 0.2s ease-in;
+	width: 100px;
+	text-align: center;
+	border-radius: 100%;
+}
+
+#back::before,
+#back::after {
+  background-color: white;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform-origin: center left;
+  transition: all 0.2s ease-in;
+  width: 141.4214px;
+  z-index: -1;
+}
+
+#back::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+#back::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+#back:hover {
+  color: rgb(224, 135, 18);
+}
+
+#back:hover::before,
+#back:hover::after {
+  height: 50px;
+  transform: rotate(0deg);
+}
+
+#button{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+#button::before, #button::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+  }
+
+  #button:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+  
+#button::before{
+	top: -4px;
+	left: 10%;
+  }
+  
+  #button::after{
+	bottom: -4px;
+	right: 10%;
+  }
+  
+  #button:hover::before{
+	left: 80%;
+  }
+  
+  #button:hover::after{
+	right: 80%;
+  }
+
+#info-button{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+#info-button:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+
+.weed .PackageWeed{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+.weed .PackageWeed::before, .weed .PackageWeed::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+  }
+
+  .weed .PackageWeed:hover{
+	background-color: rgba(224, 135, 18);
+}
+  
+  .weed .PackageWeed::before{
+	top: -4px;
+	left: 10%;
+  }
+  
+  .weed .PackageWeed::after{
+	bottom: -4px;
+	right: 10%;
+  }
+  
+  .weed .PackageWeed:hover::before{
+	left: 80%;
+  }
+  
+  .weed .PackageWeed:hover::after{
+	right: 80%;
+  }
+
+.weed .InputPackageWeed{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+.weed .InputPackageWeed:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+
+input[type=number] {
+	/*for absolutely positioning spinners*/
+	position: relative; 
+	padding: 5px;
+	padding-right: 25px;
+  }
+
+  input[type=number]::-webkit-outer-spin-button, 
+  input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: inner-spin-button !important;
+	width: 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+  }
+
+.opium {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	right: 36.5%;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-radius: 5%;
+}
+
+.opium:hover {
+	background: rgba(224, 135, 18, .1);
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.opium img {
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 10px;
+
+
+}
+
+.opium .CraftOpium{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+.opium .CraftOpium::before, .opium .CraftOpium::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+  }
+
+  .opium .CraftOpium:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+  
+  .opium .CraftOpium::before{
+	top: -4px;
+	left: 10%;
+  }
+  
+  .opium .CraftOpium::after{
+	bottom: -4px;
+	right: 10%;
+  }
+  
+  .opium .CraftOpium:hover::before{
+	left: 80%;
+  }
+  
+  .opium .CraftOpium:hover::after{
+	right: 80%;
+  }
+
+.opium .InputOpium{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+.opium .InputOpium:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+
+.opium-package {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	right: 36.5%;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-radius: 5%;
+}
+
+.opium-package:hover {
+	background: rgba(224, 135, 18, .1);
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.opium-package img {
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 10px;
+
+
+}
+
+.opium-package .PackageOpium{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+.opium-package .PackageOpium::before, .opium-package .PackageOpium::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+}
+
+.opium-package .PackageOpium:hover{
+	background-color: rgba(224, 135, 18);
+}
+  
+.opium-package .PackageOpium::before{
+	top: -4px;
+	left: 10%;
+}
+  
+.opium-package .PackageOpium::after{
+	bottom: -4px;
+	right: 10%;
+}
+  
+.opium-package .PackageOpium:hover::before{
+	left: 80%;
+}
+  
+.opium-package .PackageOpium:hover::after{
+	right: 80%;
+}
+
+.opium-package .InputPackageOpium{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+.opium-package .InputPackageOpium:hover{
+	background-color: rgba(224, 135, 18);
+}
+
+.coke {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	right: 50px;
+	padding-right: 9.9%;
+	padding-left: 9.9%;
+	border-radius: 5%;
+}
+
+.coke:hover {
+	background: rgba(224, 135, 18, .1);
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.coke img {
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 10px;
+
+
+}
+
+.coke .CraftCoke{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+.coke .CraftCoke::before, .coke .CraftCoke::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+  }
+
+  .coke .CraftCoke:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+  
+  .coke .CraftCoke::before{
+	top: -4px;
+	left: 10%;
+  }
+  
+  .coke .CraftCoke::after{
+	bottom: -4px;
+	right: 10%;
+  }
+  
+  .coke .CraftCoke:hover::before{
+	left: 80%;
+  }
+  
+  .coke .CraftCoke:hover::after{
+	right: 80%;
+  }
+
+.coke .InputCoke{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+.coke .InputCoke:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+
+.coke-package {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	right: 50px;
+	padding-right: 9.9%;
+	padding-left: 9.9%;
+	border-radius: 5%;
+}
+
+.coke-package:hover {
+	background: rgba(224, 135, 18, .1);
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.coke-package img {
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 10px;
+
+
+}
+
+.coke-package .PackageCoke{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+.coke-package .PackageCoke::before, .coke-package .PackageCoke::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+  }
+
+  .coke-package .PackageCoke:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+  
+  .coke-package .PackageCoke::before{
+	top: -4px;
+	left: 10%;
+  }
+  
+  .coke-package .PackageCoke::after{
+	bottom: -4px;
+	right: 10%;
+  }
+  
+  .coke-package .PackageCoke:hover::before{
+	left: 80%;
+  }
+  
+  .coke-package .PackageCoke:hover::after{
+	right: 80%;
+  }
+
+.coke-package .InputPackageCoke{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+.coke-package .InputPackageCoke:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+
+.meth {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	bottom: 2%;
+	left: auto;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-radius: 5%;
+}
+
+.meth:hover {
+	background: rgba(224, 135, 18, .1);
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.meth img {
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 10px;
+
+
+}
+
+.meth .CraftMeth{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+.meth .CraftMeth::before, .meth .CraftMeth::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+  }
+
+  .meth .CraftMeth:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+  
+  .meth .CraftMeth::before{
+	top: -4px;
+	left: 10%;
+  }
+  
+  .meth .CraftMeth::after{
+	bottom: -4px;
+	right: 10%;
+  }
+  
+  .meth .CraftMeth:hover::before{
+	left: 80%;
+  }
+  
+  .meth .CraftMeth:hover::after{
+	right: 80%;
+  }
+
+.meth .InputMeth{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+.meth .InputMeth:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+
+.meth-package {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	bottom: 2%;
+	left: auto;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-radius: 5%;
+}
+
+.meth-package:hover {
+	background: rgba(224, 135, 18, .1);
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.meth-package img {
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 10px;
+
+
+}
+
+.meth-package .PackageMeth{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+.meth-package .PackageMeth::before, .meth-package .PackageMeth::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+  }
+
+  .meth-package .PackageMeth:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+  
+  .meth-package .PackageMeth::before{
+	top: -4px;
+	left: 10%;
+  }
+  
+  .meth-package .PackageMeth::after{
+	bottom: -4px;
+	right: 10%;
+  }
+  
+  .meth-package .PackageMeth:hover::before{
+	left: 80%;
+  }
+  
+  .meth-package .PackageMeth:hover::after{
+	right: 80%;
+  }
+
+.meth-package .InputPackageMeth{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+.meth-package .InputPackageMeth:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+
+.heroin {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	right: 36.5%;
+	bottom: 2%;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-radius: 5%;
+}
+
+.heroin:hover {
+	background: rgba(224, 135, 18, .1);
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.heroin img {
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 10px;
+
+
+}
+
+.heroin .CraftHeroin{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+.heroin .CraftHeroin::before, .heroin .CraftHeroin::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+  }
+
+  .heroin .CraftHeroin:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+  
+  .heroin .CraftHeroin::before{
+	top: -4px;
+	left: 10%;
+  }
+  
+  .heroin .CraftHeroin::after{
+	bottom: -4px;
+	right: 10%;
+  }
+  
+  .heroin .CraftHeroin:hover::before{
+	left: 80%;
+  }
+  
+  .heroin .CraftHeroin:hover::after{
+	right: 80%;
+  }
+
+.heroin .InputHeroin{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+.heroin .InputHeroin:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+
+.heroin-package {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	right: 36.5%;
+	bottom: 2%;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-radius: 5%;
+}
+
+.heroin-package:hover {
+	background: rgba(224, 135, 18, .1);
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.heroin-package img {
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 10px;
+
+
+}
+
+.heroin-package .PackageHeroin{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+.heroin-package .PackageHeroin::before, .heroin-package .PackageHeroin::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+  }
+
+  .heroin-package .PackageHeroin:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+  
+  .heroin-package .PackageHeroin::before{
+	top: -4px;
+	left: 10%;
+  }
+  
+  .heroin-package .PackageHeroin::after{
+	bottom: -4px;
+	right: 10%;
+  }
+  
+  .heroin-package .PackageHeroin:hover::before{
+	left: 80%;
+  }
+  
+  .heroin-package .PackageHeroin:hover::after{
+	right: 80%;
+  }
+
+.heroin-package .InputPackageHeroin{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+.heroin-package .InputPackageHeroin:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+
+.mdma {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	right: 50px;
+	bottom: 2%;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-radius: 5%;
+}
+
+.mdma:hover {
+	background: rgba(224, 135, 18, .1);
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.mdma img {
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 10px;
+}
+
+.mdma .CraftMdma{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+.mdma .CraftMdma::before, .mdma .CraftMdma::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+  }
+
+  .mdma .CraftMdma:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+  
+  .mdma .CraftMdma::before{
+	top: -4px;
+	left: 10%;
+  }
+  
+  .mdma .CraftMdma::after{
+	bottom: -4px;
+	right: 10%;
+  }
+  
+  .mdma .CraftMdma:hover::before{
+	left: 80%;
+  }
+  
+  .mdma .CraftMdma:hover::after{
+	right: 80%;
+  }
+
+.mdma .InputMdma{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+.mdma .InputMdma:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+
+.mdma-package {
+	border: 4px solid rgb(172, 168, 172);
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	right: 50px;
+	bottom: 2%;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-radius: 5%;
+}
+
+.mdma-package:hover {
+	background: rgba(224, 135, 18, .1);
+	border: 4px solid rgb(224, 135, 18);
+}
+
+.mdma-package img {
+	position: relative;
+	z-index: 1;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 10px;
+}
+
+.mdma-package .PackageMdma{
+	position: absolute;
+	bottom: 2%;
+	width: 75%;
+	padding: 4%;
+	border: 0;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	left: 12%;
+}
+
+.mdma-package .PackageMdma::before, .mdma-package .PackageMdma::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+	background: #353b48;
+	transform: skewX(50deg);
+	transition: .4s linear;
+  }
+
+  .mdma-package .PackageMdma:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
+  
+  .mdma-package .PackageMdma::before{
+	top: -4px;
+	left: 10%;
+  }
+  
+  .mdma-package .PackageMdma::after{
+	bottom: -4px;
+	right: 10%;
+  }
+  
+  .mdma-package .PackageMdma:hover::before{
+	left: 80%;
+  }
+  
+  .mdma-package .PackageMdma:hover::after{
+	right: 80%;
+  }
+
+.mdma-package .InputPackageMdma{
+	position: absolute;
+	bottom: 22%;
+	width: 25%;
+	padding: 2%;
+	color: rgb(172, 168, 172);
+	background: transparent;
+	border: 2px solid;
+	transition: all 0.3s;
+	outline: none;
+	font-size: 16px;
+	left: 35%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0);
+}
+
+.mdma-package .InputPackageMdma:hover{
+	background-color: rgba(224, 135, 18);
+	color: #353b48;
+}
