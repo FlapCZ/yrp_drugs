@@ -3,7 +3,7 @@ game 'gta5'
 
 description 'yrp_drugs'
 authot 'YourRolePlay Development'
-version '0.8'
+version '0.9'
 
 server_scripts {
 	'@es_extended/locale.lua',
