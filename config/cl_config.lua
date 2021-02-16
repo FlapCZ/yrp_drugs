@@ -17,7 +17,7 @@ Config.Zones = {
 
 Config.general_config_settings = {
 	--ESX
-	esx                      = 'hsuiwsdSAD587:479582sqeqesd_dbcuwq', -- default : esx:getSharedObject
+	esx                      = 'esx:getSharedObject', -- default : esx:getSharedObject
 	-- whitelist job ( see all drugs )
 	acces_to_all_drugs       = {
 		["lostmc"] = true,
